@@ -1,5 +1,5 @@
-import { createCss, StitchesCss } from '@stitches/react';
-export type { StitchesVariants } from '@stitches/react';
+import { createCss } from '@stitches/react'; // StitchesCss
+// export type { StitchesVariants } from '@stitches/react';
 
 const stitches = createCss({
   theme: {
@@ -297,127 +297,138 @@ const stitches = createCss({
     light: '(prefers-color-scheme: light)',
   },
   utils: {
-    p: (config) => (value: any) => ({
+    p: config => value => ({
       padding: value,
     }),
-    pt: (config) => (value: any) => ({
+    pt: config => value => ({
       paddingTop: value,
     }),
-    pr: (config) => (value: any) => ({
+    pr: config => value => ({
       paddingRight: value,
     }),
-    pb: (config) => (value: any) => ({
+    pb: config => value => ({
       paddingBottom: value,
     }),
-    pl: (config) => (value: any) => ({
+    pl: config => value => ({
       paddingLeft: value,
     }),
-    px: (config) => (value: any) => ({
+    px: config => value => ({
       paddingLeft: value,
       paddingRight: value,
     }),
-    py: (config) => (value: any) => ({
+    py: config => value => ({
       paddingTop: value,
       paddingBottom: value,
     }),
 
-    m: (config) => (value: any) => ({
+    m: config => value => ({
       marginTop: value,
       marginBottom: value,
       marginLeft: value,
       marginRight: value,
     }),
-    mt: (config) => (value: any) => ({
+    mt: config => value => ({
       marginTop: value,
     }),
-    mr: (config) => (value: any) => ({
+    mr: config => value => ({
       marginRight: value,
     }),
-    mb: (config) => (value: any) => ({
+    mb: config => value => ({
       marginBottom: value,
     }),
-    ml: (config) => (value: any) => ({
+    ml: config => value => ({
       marginLeft: value,
     }),
-    mx: (config) => (value: any) => ({
+    mx: config => value => ({
       marginLeft: value,
       marginRight: value,
     }),
-    my: (config) => (value: any) => ({
+    my: config => value => ({
       marginTop: value,
       marginBottom: value,
     }),
 
-    ta: (config) => (value: any) => ({ textAlign: value }),
+    ta: config => value => ({ textAlign: value }),
 
-    fd: (config) => (value: any) => ({ flexDirection: value }),
-    fw: (config) => (value: any) => ({ flexWrap: value }),
+    fd: config => value => ({ flexDirection: value }),
+    fw: config => value => ({ flexWrap: value }),
 
-    ai: (config) => (value: any) => ({ alignItems: value }),
-    ac: (config) => (value: any) => ({ alignContent: value }),
-    jc: (config) => (value: any) => ({ justifyContent: value }),
-    as: (config) => (value: any) => ({ alignSelf: value }),
-    fg: (config) => (value: any) => ({ flexGrow: value }),
-    fs: (config) => (value: any) => ({ flexShrink: value }),
-    fb: (config) => (value: any) => ({ flexBasis: value }),
+    ai: config => value => ({ alignItems: value }),
+    ac: config => value => ({ alignContent: value }),
+    jc: config => value => ({ justifyContent: value }),
+    as: config => value => ({ alignSelf: value }),
+    fg: config => value => ({ flexGrow: value }),
+    fs: config => value => ({ flexShrink: value }),
+    fb: config => value => ({ flexBasis: value }),
 
-    bc: (config) => (value: any) => ({
+    bc: config => value => ({
       backgroundColor: value,
     }),
 
-    br: (config) => (value: any) => ({
+    br: config => value => ({
       borderRadius: value,
     }),
-    btrr: (config) => (value: any) => ({
+    btrr: config => value => ({
       borderTopRightRadius: value,
     }),
-    bbrr: (config) => (value: any) => ({
+    bbrr: config => value => ({
       borderBottomRightRadius: value,
     }),
-    bblr: (config) => (value: any) => ({
+    bblr: config => value => ({
       borderBottomLeftRadius: value,
     }),
-    btlr: (config) => (value: any) => ({
+    btlr: config => value => ({
       borderTopLeftRadius: value,
     }),
 
-    bs: (config) => (value: any) => ({ boxShadow: value }),
+    bs: config => value => ({ boxShadow: value }),
 
-    lh: (config) => (value: any) => ({ lineHeight: value }),
+    lh: config => value => ({ lineHeight: value }),
 
-    ox: (config) => (value: any) => ({ overflowX: value }),
-    oy: (config) => (value: any) => ({ overflowY: value }),
+    ox: config => value => ({ overflowX: value }),
+    oy: config => value => ({ overflowY: value }),
 
-    pe: (config) => (value: any) => ({ pointerEvents: value }),
-    us: (config) => (value: any) => ({ WebkitUserSelect: value, userSelect: value }),
+    pe: config => value => ({ pointerEvents: value }),
+    us: config => value => ({
+      WebkitUserSelect: value,
+      userSelect: value,
+    }),
 
-    size: (config) => (value: any) => ({
+    size: config => value => ({
       width: value,
       height: value,
     }),
 
-    linearGradient: (config) => (value: any) => ({
+    linearGradient: config => value => ({
       backgroundImage: `linear-gradient(${value})`,
     }),
 
-    appearance: (config) => (value) => ({
+    appearance: config => value => ({
       WebkitAppearance: value,
       appearance: value,
     }),
-    userSelect: (config) => (value) => ({
+    userSelect: config => value => ({
       WebkitUserSelect: value,
       userSelect: value,
     }),
-    backgroundClip: (config) => (value) => ({
+    backgroundClip: config => value => ({
       WebkitBackgroundClip: value,
       backgroundClip: value,
     }),
   },
 });
 
-export type CSS = StitchesCss<typeof stitches>;
+// export type CSS = StitchesCss<typeof stitches>;
 
-export const { styled, css, theme, getCssString, global, keyframes, config } = stitches;
+export const {
+  styled,
+  css,
+  theme,
+  getCssString,
+  global,
+  keyframes,
+  config,
+} = stitches;
 
 export const utils = config.utils;
 
