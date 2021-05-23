@@ -1,4 +1,4 @@
-import { createCss } from '@stitches/react';
+import { createCss, StitchesCss } from '@stitches/react';
 export type { StitchesVariants } from '@stitches/react';
 
 const stitches = createCss({
@@ -414,6 +414,8 @@ const stitches = createCss({
     }),
   },
 });
+
+export type CSS = StitchesCss<typeof stitches>;
 
 export const { styled, css, theme, getCssString, global, keyframes, config } = stitches;
 

@@ -17,6 +17,8 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,
     // noUnused* overlap with @typescript-eslint/no-unused-vars, can disable if duplicative
+    // Meri note: disabled these because it wasn't working with the stitches config, but 
+    // there is probably a deeper issue that should be solved so this can be re-enabled
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     // use Node's module resolution algorithm, instead of the legacy TS one

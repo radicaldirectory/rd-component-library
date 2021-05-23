@@ -1,7 +1,7 @@
 import React, { FC, HTMLAttributes, ReactChild } from 'react';
 // import { Button, ButtonProps } from 'reakit/Button';
 // import { styled } from './stitches.config';
-import './global.css';
+// import './global.css';
 
 export interface Props extends HTMLAttributes<HTMLDivElement> {
   /** custom content, defaults to 'the snozzberries taste like snozzberries' */
