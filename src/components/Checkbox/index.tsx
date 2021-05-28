@@ -1,6 +1,6 @@
 import React from 'react';
 import * as RCheckbox from '@radix-ui/react-checkbox';
-import { styled } from '../../stitches.config';
+import { styled } from '@stitches/react';
 import { CheckIcon } from '@radix-ui/react-icons';
 
 const StyledCheckbox = styled(RCheckbox.Root, {
@@ -9,8 +9,8 @@ const StyledCheckbox = styled(RCheckbox.Root, {
   border: 'none',
   padding: 0,
   boxShadow: 'inset 0 0 0 1px gainsboro',
-  width: 20,
-  height: 20,
+  width: 15,
+  height: 15,
   borderRadius: 2,
   display: 'flex',
   alignItems: 'center',

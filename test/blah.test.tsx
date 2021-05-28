@@ -9,3 +9,7 @@
 //     ReactDOM.unmountComponentAtNode(div);
 //   });
 // });
+
+test('🏀 meri test', () => {
+  expect(true).toBeTruthy();
+});
