@@ -1,3 +1,7 @@
+this repo was an attempt to make a component library with TSDX, which has been abandoned due to TSDX no longer being actively maintained and it being too much of a hassle to maintain all the dependencies correctly
+
+
+
 # TSDX React w/ Storybook User Guide
 
 Congrats! You just saved yourself hours of work by bootstrapping this project with TSDX. Let’s get you oriented with what’s here and how to use it.
